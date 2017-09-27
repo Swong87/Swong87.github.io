@@ -1,44 +1,235 @@
 <!DOCTYPE html>
-<html lang="en-us">
-<head>
-	<meta charset="UTF-8">
-	<title>Stephen Wong - Portfolio</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	</head>
-	<body>
-		<header>
-			<nav>
-				<a href="index.html">About</a>	|	
-				<a href="portfolio.html">Portfolio</a>	|
-				<a href="contact.html">Contact</a>
-			</nav>
-			<h1>Stephen Wong</h1>
+<html lang="en">
 
-		</header>
-		
-		<div class="container">
-		   	<div id="wrapper">
-			   	<section id="aboutMe">
+  <head>
 
-				    <h2>About Me</h2>
-					<hr>
-				    <img src="assets/images/profilePic.jpg" alt="Stephen Wong" width="200px">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-				     <p>Graduated from the University of Central Florida in 2011 with a BA in digital media. Studied Character Animation for 2 years, and produced an animated short titled, "Squeaky Business" in 2011. Worked as a sushi chef for 3 years at The Cowfish and 1 year at Morimoto Asia. Born in Boston, Massachusetts and grew up in Boca Raton, Florida. </p>
-				    <p>Hobbies include painting, drawing, cooking, and swimming. Currently learning Web Development at the UCF Coding Bootcamp. Also worked as a graphic designer at a printing company and a production associate at Impress Ink Screen Printing.</p>
-			    </section>
-			    <aside>
-				      <h3>Connect with Me</h3>
-				      <hr>
-				      <a href="https://github.com/Swong87" target="_blank"><img src="assets/images/git.png" width="50px"></a>
-				      <a href="https://www.linkedin.com/in/stephen-wong-11065833/" target="_blank"><img src="assets/images/linked.png" width="50px"></a>
-				      <a href="http://stackoverflow.com/users/7922424/swong87" target="_blank"><img src="assets/images/stack.png" width="50px"></a>
-				</aside>
-			</div>	
-	  	</div>
-	 	<footer>
-		    	<p>©Copyright 2017 Stephen Wong</p>
-		</footer>
-	</body>
+    <title>Stephen Wong - Portfolio</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/grayscale.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Stephen Wong</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="masthead">
+      <div class="intro-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h1 class="brand-heading">Stephen Wong</h1>
+              <p class="intro-text">Pleasure to meet you.
+                <br>Welcome.</p>
+              <a href="#about" class="btn btn-circle js-scroll-trigger">
+                <i class="fa fa-angle-double-down animated"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="content-section text-center">
+      <div class="container">
+        <div class="row">
+          <img id="profilePic">
+          <div class="col-lg-8 mx-auto">
+            <h2>About Me</h2>
+
+            <p>Graduated from the University of Central Florida in 2011 with a BA in digital media. Studied Character Animation for 2 years, and produced an animated short titled, "Squeaky Business" in 2011. Worked as a sushi chef for 3 years at The Cowfish and 1 year at Morimoto Asia. Born in Boston, Massachusetts and grew up in Boca Raton, Florida.</p>
+            
+            <p>Hobbies include painting, drawing, cooking, and swimming. Currently learning Web Development at the UCF Coding Bootcamp. Also worked as a graphic designer at a printing company and a production associate at Impress Ink Screen Printing.</p>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="portfolio" class="download-section content-section text-center">
+      <div class="container">
+        <div class="col-lg-8 mx-auto">
+          <h2>My Projects</h2>
+          <p>What makes me move.</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-sm-6 portfolio-item">
+            <div>
+              <a href="https://enigmatic-anchorage-68613.herokuapp.com/"><img class="card-img-top" src="img/pro01.jpg" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="https://enigmatic-anchorage-68613.herokuapp.com/">MongoScraper</a>
+                </h4>
+                <p class="card-text">An app that lets you save and add comments to your favorite articles scraped from BuzzFeed.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 portfolio-item">
+            <div>
+              <a href="https://floating-temple-10179.herokuapp.com/"><img class="card-img-top" src="img/pro02.jpg" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="https://floating-temple-10179.herokuapp.com/">Sushi Prep List</a>
+                </h4>
+                <p class="card-text">A dynamic webpage to make a prep list of incomplete and completed tasks at the sushi bar.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 portfolio-item">
+            <div>
+              <a href="https://swong87.github.io/sushiHangMan/"><img class="card-img-top" src="img/pro03.jpg" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="https://swong87.github.io/sushiHangMan/">Sushi Hangman</a>
+                </h4>
+                <p class="card-text">A fun game of hangman that has a sushi theme!</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 portfolio-item">
+            <div>
+              <a href="https://swong87.github.io/triviaGame/"><img class="card-img-top" src="img/pro04.jpg" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="https://swong87.github.io/triviaGame/">Warcraft Trivia Game</a>
+                </h4>
+                <p class="card-text">A timed trivia game that tests your knowledge of the World of Warcaft games.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 portfolio-item">
+            <div>
+              <a href="https://swong87.github.io/trainScheduler/"><img class="card-img-top" src="img/pro05.jpg" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="https://swong87.github.io/trainScheduler/">Train Scheduler</a>
+                </h4>
+                <p class="card-text">An app that calculates train arrival times from user added trains.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 portfolio-item">
+            <div>
+              <a href="https://swong87.github.io/plantsVsZombiesRPG/"><img class="card-img-top" src="img/pro06.jpg" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="https://swong87.github.io/plantsVsZombiesRPG/">Plants Vs Zombies RPG</a>
+                </h4>
+                <p class="card-text">A simple RPG based on the game "Plants Vs Zombies."</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="content-section text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>Let's talk!</h2>
+            <p>Feel free to leave me an email.</p>
+            <form action="email.php" method="POST">
+              <div class="form-group">
+                <label for="exampleFormControlInput1">Email address</label>
+                <input name="email" type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">Message</label>
+                <textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            <br>
+            <ul class="list-inline banner-social-buttons">
+              <li class="list-inline-item">
+                <a href="https://twitter.com/CodeConejo" class="btn btn-default btn-lg">
+                  <i class="fa fa-twitter fa-fw"></i>
+                  <span class="network-name">Twitter</span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://github.com/Swong87" class="btn btn-default btn-lg">
+                  <i class="fa fa-github fa-fw"></i>
+                  <span class="network-name">Github</span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.linkedin.com/in/stephen-wong-11065833/" class="btn btn-default btn-lg">
+                  <i class="fa fa-linkedin fa-fw"></i>
+                  <span class="network-name">LinkedIn</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <div id="map"></div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container text-center">
+        <p>Copyright &copy; Stephen Wong 2017</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8nhmIr5I7cP1KWrFaL6JI-QXF9IUzTIo&sensor=false"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/grayscale.js"></script>
+
+  </body>
+
 </html>
