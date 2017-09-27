@@ -227,7 +227,7 @@ body {
   border-radius: 50%;
   height: 300px; 
   width: 300px;
-  background-image: url("../img/profilePic.JPG");
+  background-image: url("/../img/profilePic.JPG");
   background-size: cover;
   background-repeat: no-repeat;
 
