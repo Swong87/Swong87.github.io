@@ -23,7 +23,7 @@ h5,
 h6 {
   font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 700;
-  margin: 0 0 35px;
+  margin: 0 0 10px;
   letter-spacing: 1px;
   text-transform: uppercase; }
 
@@ -227,7 +227,7 @@ body {
   border-radius: 50%;
   height: 300px; 
   width: 300px;
-  background-image: url("/../img/profilePic.JPG");
+  background-image: url("../img/profilePic.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 
