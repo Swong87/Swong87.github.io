@@ -1,6 +1,6 @@
 /*!
- * Start Bootstrap - Grayscale v4.0.0-beta (http://startbootstrap.com/template-overviews/grayscale)
- * Copyright 2013-2017 Start Bootstrap
+ * Start Bootstrap - Grayscale v4.0.0-beta (https://startbootstrap.com/template-overviews/grayscale)
+ * Copyright 2013-2018 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/master/LICENSE)
  */
 body {
@@ -23,7 +23,7 @@ h5,
 h6 {
   font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 700;
-  margin: 0 0 10px;
+  margin: 0 0 35px;
   letter-spacing: 1px;
   text-transform: uppercase; }
 
@@ -34,7 +34,7 @@ p {
   @media (min-width: 768px) {
     p {
       font-size: 18px;
-      line-height: 2;
+      line-height: 1.6;
       margin: 0 0 35px; } }
 
 a {
@@ -100,7 +100,7 @@ a {
   padding: 200px 0;
   text-align: center;
   color: white;
-  background: url("../img/skyline1.jpg") no-repeat bottom center scroll;
+  background: url("../img/intro-bg.jpg") no-repeat bottom center scroll;
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -118,7 +118,7 @@ a {
       height: 100%;
       padding: 0; }
       .masthead .intro-body .brand-heading {
-        font-size: 90px; }
+        font-size: 100px; }
       .masthead .intro-body .intro-text {
         font-size: 22px; } }
 
@@ -141,12 +141,12 @@ a {
     background: rgba(255, 255, 255, 0.1); }
 
 .content-section {
-  padding-top: 80px;
-  padding-bottom: 80px; }
+  padding-top: 150px;
+  padding-bottom: 150px; }
 
 .download-section {
   color: white;
-  background: url("../img/city.jpg") no-repeat center center scroll;
+  background: url("../img/downloads-bg.jpg") no-repeat center center scroll;
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -159,10 +159,10 @@ a {
 
 @media (min-width: 992px) {
   .content-section {
-    padding-top: 100px;
-    padding-bottom: 250px; }
+    padding-top: 200px;
+    padding-bottom: 200px; }
   #map {
-    height: 550px; } }
+    height: 350px; } }
 
 .btn {
   font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -220,15 +220,3 @@ img::-moz-selection {
 
 body {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0.2); }
-
-#profilePic{
-  float:left; 
-  margin: auto 0 auto 0;
-  border-radius: 50%;
-  height: 300px; 
-  width: 300px;
-  background-image: url("../img/profilePic.JPG");
-  background-size: cover;
-  background-repeat: no-repeat;
-
-  overflow: hidden; }
