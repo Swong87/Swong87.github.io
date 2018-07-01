@@ -6,14 +6,13 @@
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 
-  <!-- Specific CSS -->
-  <link rel="stylesheet" href="style.css" type="text/css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../css/custom.css" type="text/css" />
 
 	<!--Allows me to use JQuery -->
-  <script src="https://code.jquery.com/jquery.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery.js"></script> -->
 
-  <!-- Allows me to use Bootstrap JS -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -21,7 +20,7 @@
 </head>
 <body>
 	
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-fixed-top">
+	<!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-fixed-top">
   		<a class="navbar-brand" href="#">Stephen Wong</a>
   		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     		<span class="navbar-toggler-icon"></span>
@@ -43,19 +42,148 @@
           </li>          
         </ul>
   		</div>
-	</nav>
+  </nav> -->
 
-  <div class="jumbotron text-center">
-    <h1 class="display-1">Stephen Wong</h1>
-  </div>
+  <header id="main-header">
+    <div class="header-wrapper">
+      <a class="logo" href="#">STEPHEN WONG</a>
+
+      <div class="mobile-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav>
+        <ul>
+          <!--Main nav to navigate to different parts of the page-->
+          <li><a id="hero-link" href="#hero">Home</a></li>
+          <li><a id="about-link" href="#about">About</a></li>
+          <li><a id="services-link" href="#services">Services</a></li>
+          <li><a id="portfolio-link" href="#portfolio">Portfolio</a></li>
+          <li><a id="client-link" href="#client">Clients</a></li>
+          <li><a id="contact-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="hero">
+    <div id="particles-js"></div>
+    <div class="row row__hero">
+      <div class="col-lg-12">
+        <div class="hero-content">
+          <img src="../img/logo.gif">
+          <h1>Stephen Wong</h1>
+          <h2 id="hero-text-animation">Full Stack Web Developer</h2>
+          <button class="download"><a download href="downloads/example.txt">Download CV</a></button><!--To add your file simply replace example.txt with whatever file you want-->
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="portfolio">
+    <div class="container">
+      <div class="section-title">
+        <h1>My <span class="accent-text">Portfolio</span></h1>
+      </div>
+      
+      <div id="filter-btn" class="button-group">
+        <ul>
+          <!--Buttons for the image filter-->
+          <!--data-filter="What ever you want your image to be filter by"-->
+          <li><button class="button is-checked" data-filter="*">All</button></li>
+          <li><button class="button" data-filter=".graph">Graph</button></li>
+          <li><button class="button" data-filter=".design">Design</button></li>
+          <li><button class="button" data-filter=".brand">Brand</button></li>
+          <!--End of image filter buttonimg/ports-->
+        </ul>
+      </div>
+
+      <div class="img-grid">
+        <div class="img-container graph" data-category="graph">
+            <img src="http://www.bricho.com/demo/brian/with-particles/img/portfolio-img.jpeg">
+            <div class="img-overlay popup-gallery" href="http://www.bricho.com/demo/brian/with-particles/img/portfolio-img.jpeg">
+                <div class="img-overlay-text">
+                    <p>Category</p>
+                    <h3>Project Title</h3>
+                </div>
+            </div>
+        </div>
+        
+        <div class="img-container brand" data-category="brand">
+            <img src="http://www.bricho.com/demo/brian/with-particles/img/portfolio-img.jpeg">
+            <div class="img-overlay popup-gallery" href="http://www.bricho.com/demo/brian/with-particles/img/portfolio-img.jpeg">
+                <div class="img-overlay-text">
+                    <p>Category</p>
+                    <h3>Project Title</h3>
+                </div>
+            </div>
+        </div>
+        
+        <div class="img-container design" data-category="design">
+            <img src="http://www.bricho.com/demo/brian/with-particles/img/portfolio-img.jpeg">
+            <div class="img-overlay popup-gallery" href="http://www.bricho.com/demo/brian/with-particles/img/portfolio-img.jpeg">
+                <div class="img-overlay-text">
+                    <p>Category</p>
+                    <h3>Project Title</h3>
+                </div>
+            </div>
+        </div>
+        
+        <div class="img-container design" data-category="design">
+            <img src="http://www.bricho.com/demo/brian/with-particles/img/portfolio-img.jpeg">
+            <div class="img-overlay popup-gallery" href="http://www.bricho.com/demo/brian/with-particles/img/portfolio-img.jpeg">
+                <div class="img-overlay-text">
+                    <p>Category</p>
+                    <h3>Project Title</h3>
+                </div>
+            </div>
+        </div>
+        
+        <div class="img-container design" data-category="design">
+            <img src="http://www.bricho.com/demo/brian/with-particles/img/portfolio-img.jpeg">
+            <div class="img-overlay popup-gallery" href="http://www.bricho.com/demo/brian/with-particles/img/portfolio-img.jpeg">
+                <div class="img-overlay-text">
+                    <p>Category</p>
+                    <h3>Project Title</h3>
+                </div>
+            </div>
+        </div>
+        
+        <div class="img-container graph" data-category="graph">
+            <img src="http://www.bricho.com/demo/brian/with-particles/img/portfolio-img.jpeg">
+            <div class="img-overlay popup-gallery" href="http://www.bricho.com/demo/brian/with-particles/img/portfolio-img.jpeg">
+                <div class="img-overlay-text">
+                    <p>Category</p>
+                    <h3>Project Title</h3>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Copyright &#169; 2018 Stephen Wong</p>
+  </footer>
 
 	<!--Allows me to use JQuery -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <!-- Allows me to use Bootstrap JS -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!-- Popper JS for Bootstrap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 
 	<!-- Bootstrap's javascript for dropdown menu -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <!-- <script src="js/particles.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.2/ScrollMagic.min.js"></script>
+  <!-- <script src="js/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script> -->
+  <script src="../js/grayscale.js"></script>
 
 </body>
 </html>
