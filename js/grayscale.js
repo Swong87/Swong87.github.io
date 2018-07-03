@@ -110,15 +110,15 @@ $('.mobile-toggle').click(function(){
 });
 
 /*******************************************NAV SCROLL*******************************************/
-$('nav a').click(function(event) {
-    var id = $(this).attr("href");
-    var offset = 70;
-    var target = $(id).offset().top - offset;
-    $('html, body').animate({
-        scrollTop: target
-    }, 500);
-    event.preventDefault();
-});
+// $('nav a').click(function(event) {
+//     var id = $(this).attr("href");
+//     var offset = 70;
+//     var target = $(id).offset().top - offset;
+//     $('html, body').animate({
+//         scrollTop: target
+//     }, 500);
+//     event.preventDefault();
+// });
 
 /*******************************************PRELOAD*******************************************/
 var overlay = document.getElementById("preload-overlay");
@@ -139,7 +139,7 @@ particlesJS("particles-js", {
             }
         },
         "color":{
-            "value":"#000"
+            "value":"#fff"
         },
         "shape":{
             "type":"circle",
@@ -167,7 +167,7 @@ particlesJS("particles-js", {
             }
         },
         "size":{
-            "value":4,
+            "value":3,
             "random":true,
             "anim":{
                 "enable":false,
@@ -177,7 +177,7 @@ particlesJS("particles-js", {
             }
         },
         "line_linked":{
-            "enable":true,
+            "enable":false,
             "distance":150,
             "color":"#fff",
             "opacity":0.5,
@@ -245,21 +245,21 @@ particlesJS("particles-js", {
 
 
   // Smooth scrolling using jQuery easing
-  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: (target.offset().top - 48)
-        }, 1000, "easeInOutExpo");
-        return false;
-      }
-    }
-  });
+//   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+//     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+//       var target = $(this.hash);
+//       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+//       if (target.length) {
+//         $('html, body').animate({
+//           scrollTop: (target.offset().top - 48)
+//         }, 1000, "easeInOutExpo");
+//         return false;
+//       }
+//     }
+//   });
 
   // Closes responsive menu when a scroll trigger link is clicked
-  $('.js-scroll-trigger').click(function() {
+  $('.navbar-toggler').click(function() {
     $('.navbar-collapse').collapse('hide');
   });
 
