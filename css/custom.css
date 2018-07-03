@@ -74,14 +74,14 @@ body {
   margin-bottom: 50px; }
 
 .accent-text {
-  font-family: "Arial Black", sans-serif;
-  color: #3EAAB6; }
+  font-family: "Dancing Script", cursive;
+  color: #E52E2D; }
 
 .active {
-  color: #3EAAB6; }
+  color: #E52E2D; }
 
 .is-checked {
-  color: #3EAAB6; }
+  color: #E52E2D; }
 
 h2 {
   margin-bottom: 20px; }
@@ -116,7 +116,7 @@ a {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #3EAAB6; }
+  background: #E52E2D; }
 
 /***********************************PRELOAD PAGE***********************************/
 #preload-overlay {
@@ -146,8 +146,8 @@ a {
 .loader1 {
   width: 100px;
   height: 100px;
-  border-top: 5px solid #3EAAB6;
-  border-bottom: 5px solid #3EAAB6;
+  border-top: 5px solid #E52E2D;
+  border-bottom: 5px solid #E52E2D;
   -webkit-animation: clockwisespin 2s linear infinite;
   animation: clockwisespin 2s linear infinite; }
 
@@ -208,13 +208,13 @@ a {
 /***********************************HEADER STYLES***********************************/
 #main-header {
   position: fixed;
-  top: 0;
+  top: 50px;
   max-height: 70px;
   width: 100%;
   padding: 20px 0 10px 0;
   z-index: 900;
   background: #fff;
-  border-bottom: 1px #3EAAB6 solid;
+  border-bottom: 1px #E52E2D solid;
   overflow: hidden; }
 
 @media screen and (max-width: 760px) {
@@ -229,6 +229,29 @@ a {
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg); }
 
+.bg-dark {
+  background-color: #080808 !important; }
+
+#mainNav {
+  justify-content: space-around; }
+
+.navbar-collapse {
+  flex-basis: unset; }
+
+.navbar-dark .navbar-brand {
+  -webkit-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease; }
+  .navbar-dark .navbar-brand:hover {
+    color: #e84544; }
+
+.navbar-dark .navbar-nav a.nav-link {
+  -webkit-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease; }
+  .navbar-dark .navbar-nav a.nav-link:hover {
+    color: #e84544; }
+
 .logo {
   float: left;
   display: block;
@@ -237,8 +260,8 @@ a {
   line-height: 1;
   font-size: 27pt;
   font-weight: bold;
-  color: #3EAAB6;
-  font-family: "Arial Black", sans-serif; }
+  color: #E52E2D;
+  font-family: "Dancing Script", cursive; }
 
 @media screen and (max-width: 760px) {
   .logo {
@@ -286,10 +309,10 @@ a {
   transition: color 0.3s ease; }
 
 #main-header nav ul .active {
-  color: #3EAAB6; }
+  color: #E52E2D; }
 
 #main-header nav ul a:hover {
-  color: #3EAAB6; }
+  color: #E52E2D; }
 
 .mobile-toggle {
   display: none;
@@ -324,7 +347,7 @@ a {
 
 /***********************************HERO STYLES***********************************/
 #hero {
-  background: url("../img/frozenTundra.jpg") no-repeat center center;
+  background: url("../img/spacebg.jpg") no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
   height: 100%;
@@ -335,9 +358,6 @@ a {
   height: 100%; }
 
 .hero-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
@@ -350,12 +370,12 @@ a {
 
 .hero-content h2 {
   font-size: 30px;
-  color: #bfbfbf; }
+  color: #808080; }
 
 .hero-content .download {
-  color: #bfbfbf;
+  color: #808080;
   background: none;
-  border: 1px #3EAAB6 solid;
+  border: 1px #E52E2D solid;
   border-radius: 1000px;
   padding: 10px;
   -webkit-transition: border-color 0.3s ease;
@@ -365,34 +385,35 @@ a {
 
 .hero-content .download a {
   color: #bfbfbf;
-  text-decoration: none;
-  font-size: 16px; }
+  font-size: 16px;
+  -webkit-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease; }
 
 .hero-content .download:hover {
   border-color: #bfbfbf; }
+  .hero-content .download:hover a {
+    text-decoration: none;
+    color: #fff; }
 
-.hero-content img {
-  width: 150px;
-  height: auto;
-  /* border-radius: 5%; */
-  /* border: 3px #fff solid;  */
-}
-
-@media screen and (max-width: 768px) {
-  .hero-content img {
-    width: 200px;
-    height: 200px; } }
+.hero_img_container {
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  border-radius: 30%;
+  border: 3px #E52E2D solid;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  @media screen and (max-width: 768px) {
+    .hero_img_container {
+      width: 200px;
+      height: 200px; } }
+  .hero_img_container img {
+    width: 75%;
+    height: auto; }
 
 /***********************************ABOUT STYLES***********************************/
-.about-text {
-  opacity: 0;
-  -webkit-transform: translateX(25px);
-  -ms-transform: translateX(25px);
-  transform: translateX(25px);
-  -webkit-transition: all .3s ease-out;
-  -o-transition: all .3s ease-out;
-  transition: all .3s ease-out; }
-
 .about-text-animate {
   opacity: 1;
   -webkit-transform: translateX(0);
@@ -421,7 +442,7 @@ a {
   cursor: pointer; }
 
 .about-social .fab:hover, .about-social .far:hover {
-  color: #3EAAB6; }
+  color: #E52E2D; }
 
 .skill-progress-container p {
   color: #454545; }
@@ -447,7 +468,7 @@ a {
 .inner-percent {
   height: inherit;
   width: 0;
-  background: #3EAAB6;
+  background: #E52E2D;
   -webkit-transition: all .3s linear;
   -o-transition: all .3s linear;
   transition: all .3s linear; }
@@ -472,7 +493,7 @@ a {
   padding: 20px; }
 
 .service-block .icon {
-  color: #3EAAB6;
+  color: #E52E2D;
   font-size: 40px;
   opacity: 0;
   -webkit-transform: translateY(-20px);
@@ -539,7 +560,7 @@ a {
   transition: all .3s ease-out; }
 
 #filter-btn .button:hover {
-  color: #3EAAB6; }
+  color: #E52E2D; }
 
 .img-container {
   position: relative;
@@ -560,7 +581,7 @@ a {
   height: 100%;
   top: 0;
   left: 0;
-  background: rgba(0, 100, 150, 0.5);
+  background: rgba(229, 46, 45, 0.3);
   border-radius: 10px;
   outline: 1px solid #fff;
   outline-offset: -15px;
@@ -693,5 +714,6 @@ footer {
 .row__hero {
   position: absolute;
   top: 50%;
+  left: 50%;
   text-align: center;
-  width: 100%; }
+  height: 0; }
