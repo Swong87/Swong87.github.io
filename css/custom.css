@@ -206,12 +206,14 @@ a {
   background-color: #080808 !important; }
 
 #mainNav {
+  -ms-flex-pack: distribute;
   justify-content: space-around;
   font-family: "modern", sans-serif;
   letter-spacing: 2px;
   border-bottom: 1px solid #00ccff; }
 
 .navbar-collapse {
+  -ms-flex-preferred-size: unset;
   flex-basis: unset; }
 
 .navbar-dark .navbar-brand {
@@ -298,7 +300,6 @@ a {
   top: 0;
   width: 30px;
   -webkit-transition: all 200ms ease-in;
-  -moz-transition: all 200ms ease-in;
   -o-transition: all 200ms ease-in;
   transition: all 200ms ease-in; }
 
@@ -327,8 +328,14 @@ a {
   background-attachment: fixed;
   height: 100%;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center; }
 
 #particles-js {
@@ -337,6 +344,8 @@ a {
   position: absolute; }
 
 .hero-content {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content; }
 
 .hero-content h1 {
@@ -381,8 +390,14 @@ a {
   margin: auto;
   border-radius: 30%;
   border: 3px #00ccff solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center; }
   @media screen and (max-width: 768px) {
     .hero_img_container {
@@ -406,10 +421,16 @@ a {
   background: url("../img/city.jpg") no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
-  height: 100%;
+  min-height: 100%;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center; }
 
 .about-text-animate {
@@ -570,7 +591,7 @@ a {
 
 @media screen and (max-width: 760px) {
   .img-container {
-    width: 100%; } }
+    width: auto; } }
 
 .img-overlay {
   position: absolute;
@@ -709,6 +730,10 @@ footer {
   color: #fff; }
 
 .row__hero {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   text-align: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content; }
