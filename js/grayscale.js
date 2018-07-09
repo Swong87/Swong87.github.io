@@ -42,12 +42,12 @@ var $grid = $('.img-grid').isotope({
 
 /*******Popup Image Gallary in Porfolio*******/
 
-$('.popup-gallery').magnificPopup({
-  type: 'image',
-  gallery:{
-    enabled:true
-  }
-});
+// $('.popup-gallery').magnificPopup({
+//   type: 'image',
+//   gallery:{
+//     enabled:true
+//   }
+// });
 
 
 /*******************************************SCROLL MAGIC*******************************************/

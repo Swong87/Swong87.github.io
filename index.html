@@ -9,16 +9,24 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/custom.min.css" type="text/css" />
 
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
 	<!--Allows me to use JQuery -->
   <!-- <script src="https://code.jquery.com/jquery.js"></script> -->
-
-  
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Stephen Wong</title>
 </head>
 <body>
+
+  <!-- <div id="preload-overlay">
+      <div class="loader-frame">
+          <div class="loader1" id="loader1"></div>
+          <div class="loader2" id="loader2"></div>
+      </div>
+  </div> -->
 	
 	<nav id="mainNav" class="navbar navbar-expand-lg navbar-dark bg-dark navbar-fixed-top">
   		<a class="navbar-brand" href="#">Stephen Wong</a>
@@ -47,13 +55,11 @@
   <section id="hero">
     <div id="particles-js"></div>
     <div class="row row__hero">
-      <div class="col-lg-12">
-        <div class="hero-content">
-          <div class="hero_img_container"><img src="img/logo.gif" /></div> 
-          <h1>Stephen Wong</h1>
-          <h2 id="hero-text-animation">Full Stack Web Developer</h2>
-          <button class="download"><a href="https://docs.google.com/document/d/1ipe5lAR92BvLnKM-lOR_02kn3LlAzB5_JjFA9yMRwW8/edit?usp=sharing" target="_blank">Download CV</a></button>
-        </div>
+      <div class="col-lg-12 hero-content">
+        <div class="hero_img_container"><img src="img/logo.gif" /></div> 
+        <h1>Stephen Wong</h1>
+        <h2 id="hero-text-animation">Full Stack Web Developer</h2>
+        <button class="download"><a href="https://docs.google.com/document/d/1ipe5lAR92BvLnKM-lOR_02kn3LlAzB5_JjFA9yMRwW8/edit?usp=sharing" target="_blank">Download CV</a></button>
       </div>
     </div>
   </section>
@@ -151,6 +157,71 @@
       </div>
     </div>
   </section>
+
+  <section id="about">
+    <div class="container">
+        <div class="row left-xs left-sm left-md left-lg">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <div class="about-text">
+                    <h2>Hi, I'm <span class="accent-text">Stephen</span></h2>
+                    <p>
+                      I am a Full Stack Web Developer with a passion for tech, a love for food, and a respect for art.  I've studied Digital Media and 3D Animation at UCF for 5 years.  During my time in school I made my living as a Sushi Chef, gaining some training from Iron Chef Masaharu Morimoto.  5 years after I graduated, I was given the opportunity to continue my learning by going back to UCF to study Full Stack Web Development.  I have 2 loves in my life; My girlfriend, Lucia, and my baby girl, Lila.  In our free time we love to travel and explore delicious foods.
+                    </p>
+                    <ul class="about-social">
+                        <!--Social icons for the about section-->
+                        <!--These icons are font-awesome icons and more can be looked up at https://fontawesome.com/icons?d=gallery-->
+                        <li><a href="http://www.google.com"><i class="fab fa-facebook-f"></i></a></li>
+                        <!--Simply replace the google link with your social media link-->
+                        <li><a href="http://www.google.com"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="http://www.google.com"><i class="far fa-envelope"></i></a></li>
+                        <li><a href="http://www.google.com"><i class="fab fa-google-plus-g"></i></a></li>
+                        <li><a href="http://www.google.com"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <div class="about-resume">
+                    <div class="skills">
+                        <h2>My Skills</h2>
+                        
+                        <div class="skill-progress-container">
+                            <p>Back-End Dev</p>
+                            <div class="skill-bar">
+                                <div class="bar-percent backEnd"><div class="inner-percent"></div></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-progress-container">
+                            <p>Front-End Dev</p>
+                            <div class="skill-bar">
+                                <div class="bar-percent frontEnd"><div class="inner-percent"></div></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-progress-container">
+                            <p>Databases</p>
+                            <div class="skill-bar">
+                                <div class="bar-percent databases"><div class="inner-percent"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="education">
+                        <h2>My Education</h2>
+                        <div class="eduction-block">
+                            <h4>University of Central Florida</h4>
+                            <p>BA in Digital Media</p>
+                        </div>
+                        <div class="eduction-block">
+                            <h4>University of Central Florida</h4>
+                            <p>Certification in Web Development</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
   <footer>
     <p>Copyright &#169; 2018 Stephen Wong</p>
