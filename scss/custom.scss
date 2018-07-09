@@ -323,7 +323,8 @@ a {
       -ms-flex-align: center;
           align-items: center;
   @media(max-width: 420px) {
-    background-attachment: scroll; } }
+    background-attachment: scroll;
+    background-size: auto; } }
 
 #particles-js {
   width: 100%;
@@ -417,8 +418,9 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-          @media(max-width: 420px) {
-  background-attachment: scroll; } }
+  @media(max-width: 420px) {
+    background-attachment: scroll;
+    background-size: auto; } }
 
 .about-text-animate {
   opacity: 1;

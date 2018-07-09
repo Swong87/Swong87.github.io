@@ -339,7 +339,8 @@ a {
   align-items: center; }
   @media (max-width: 420px) {
     #hero {
-      background-attachment: scroll; } }
+      background-attachment: scroll;
+      background-size: auto; } }
 
 #particles-js {
   width: 100%;
@@ -437,7 +438,8 @@ a {
   align-items: center; }
   @media (max-width: 420px) {
     #about {
-      background-attachment: scroll; } }
+      background-attachment: scroll;
+      background-size: auto; } }
 
 .about-text-animate {
   opacity: 1;
