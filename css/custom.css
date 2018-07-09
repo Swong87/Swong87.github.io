@@ -337,6 +337,9 @@ a {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
+  @media (max-width: 420px) {
+    #hero {
+      background-attachment: scroll; } }
 
 #particles-js {
   width: 100%;
@@ -432,6 +435,9 @@ a {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
+  @media (max-width: 420px) {
+    #about {
+      background-attachment: scroll; } }
 
 .about-text-animate {
   opacity: 1;

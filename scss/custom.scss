@@ -321,7 +321,9 @@ a {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  @media(max-width: 420px) {
+    background-attachment: scroll; } }
 
 #particles-js {
   width: 100%;
@@ -414,7 +416,9 @@ a {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+          @media(max-width: 420px) {
+  background-attachment: scroll; } }
 
 .about-text-animate {
   opacity: 1;
