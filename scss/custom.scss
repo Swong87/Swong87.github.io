@@ -205,6 +205,18 @@ a {
   font-family: "modern", sans-serif;
   letter-spacing: 2px;
   border-bottom: 1px solid rgb(0, 204, 255);
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  @media(max-width: 992px) {
+    justify-content: space-between;
+    .navbar-collapse {
+      flex-basis: 100%;
+    }
+    .navbar-nav {
+        align-items: flex-end;
+    }
+  }
 }
 .navbar-collapse {
   -ms-flex-preferred-size: unset;

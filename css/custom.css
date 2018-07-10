@@ -210,7 +210,17 @@ a {
   justify-content: space-around;
   font-family: "modern", sans-serif;
   letter-spacing: 2px;
-  border-bottom: 1px solid #00ccff; }
+  border-bottom: 1px solid #00ccff;
+  position: fixed;
+  z-index: 1;
+  width: 100%; }
+  @media (max-width: 992px) {
+    #mainNav {
+      justify-content: space-between; }
+      #mainNav .navbar-collapse {
+        flex-basis: 100%; }
+      #mainNav .navbar-nav {
+        align-items: flex-end; } }
 
 .navbar-collapse {
   -ms-flex-preferred-size: unset;
