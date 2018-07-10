@@ -100,32 +100,21 @@ $(document).ready(function(){
     
 });
 
-/*******************************************MOBILE NAV*******************************************/
-$('.mobile-toggle').click(function(){
-  if($('#main-header').hasClass('open-nav')){
-     $('#main-header').removeClass('open-nav');
-  }else{
-    $('#main-header').addClass('open-nav');
-  }
+/*******************************************NAV TOGGLE*******************************************/
+$('.nav-link').click(function(event) {
+    if($('.navbar-collapse').hasClass('show')) {
+        $('.navbar-collapse').removeClass('show');
+    }else{
+        $('.navbar-collapse').addClass('show');
+    }
 });
-
-/*******************************************NAV SCROLL*******************************************/
-// $('nav a').click(function(event) {
-//     var id = $(this).attr("href");
-//     var offset = 70;
-//     var target = $(id).offset().top - offset;
-//     $('html, body').animate({
-//         scrollTop: target
-//     }, 500);
-//     event.preventDefault();
-// });
 
 /*******************************************PRELOAD*******************************************/
 var overlay = document.getElementById("preload-overlay");
 
-// window.addEventListener('load', function(){
-//   overlay.style.display = "none";
-// })
+window.addEventListener('load', function(){
+  overlay.style.display = "none";
+})
 
 /***********************Particles*************/
 
