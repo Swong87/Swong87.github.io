@@ -42,12 +42,12 @@ var $grid = $('.img-grid').isotope({
 
 /*******Popup Image Gallary in Porfolio*******/
 
-$('.popup-gallery').magnificPopup({
-  type: 'image',
-  gallery:{
-    enabled:true
-  }
-});
+// $('.popup-gallery').magnificPopup({
+//   type: 'image',
+//   gallery:{
+//     enabled:true
+//   }
+// });
 
 
 /*******************************************SCROLL MAGIC*******************************************/
@@ -100,32 +100,21 @@ $(document).ready(function(){
     
 });
 
-/*******************************************MOBILE NAV*******************************************/
-$('.mobile-toggle').click(function(){
-  if($('#main-header').hasClass('open-nav')){
-     $('#main-header').removeClass('open-nav');
-  }else{
-    $('#main-header').addClass('open-nav');
-  }
-});
-
-/*******************************************NAV SCROLL*******************************************/
-$('nav a').click(function(event) {
-    var id = $(this).attr("href");
-    var offset = 70;
-    var target = $(id).offset().top - offset;
-    $('html, body').animate({
-        scrollTop: target
-    }, 500);
-    event.preventDefault();
+/*******************************************NAV TOGGLE*******************************************/
+$('.nav-link').click(function(event) {
+    if($('.navbar-collapse').hasClass('show')) {
+        $('.navbar-collapse').removeClass('show');
+    }else{
+        $('.navbar-collapse').addClass('show');
+    }
 });
 
 /*******************************************PRELOAD*******************************************/
 var overlay = document.getElementById("preload-overlay");
 
-// window.addEventListener('load', function(){
-//   overlay.style.display = "none";
-// })
+window.addEventListener('load', function(){
+  overlay.style.display = "none";
+})
 
 /***********************Particles*************/
 
@@ -139,7 +128,7 @@ particlesJS("particles-js", {
             }
         },
         "color":{
-            "value":"#000"
+            "value":"#fff"
         },
         "shape":{
             "type":"circle",
@@ -167,7 +156,7 @@ particlesJS("particles-js", {
             }
         },
         "size":{
-            "value":4,
+            "value":3,
             "random":true,
             "anim":{
                 "enable":false,
@@ -177,7 +166,7 @@ particlesJS("particles-js", {
             }
         },
         "line_linked":{
-            "enable":true,
+            "enable":false,
             "distance":150,
             "color":"#fff",
             "opacity":0.5,
@@ -245,21 +234,21 @@ particlesJS("particles-js", {
 
 
   // Smooth scrolling using jQuery easing
-  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: (target.offset().top - 48)
-        }, 1000, "easeInOutExpo");
-        return false;
-      }
-    }
-  });
+//   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+//     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+//       var target = $(this.hash);
+//       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+//       if (target.length) {
+//         $('html, body').animate({
+//           scrollTop: (target.offset().top - 48)
+//         }, 1000, "easeInOutExpo");
+//         return false;
+//       }
+//     }
+//   });
 
   // Closes responsive menu when a scroll trigger link is clicked
-  $('.js-scroll-trigger').click(function() {
+  $('.navbar-toggler').click(function() {
     $('.navbar-collapse').collapse('hide');
   });
 

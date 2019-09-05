@@ -1,229 +1,249 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
+<head>
+  <title>Stephen Wong | Full Stack Web Developer | Orlando, FL</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Learn more about Stephen Wong, Full Stack Web Developer from Orlando Florida. Contact Stephen for front-end or back-end services now."/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <head>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-   
-    <title>Portfolio: Stephen Wong</title>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/custom.min.css" type="text/css" />
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+</head>
+<body>
 
-    <!-- Custom fonts for this template -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
-
-    <!-- Custom styles for this template -->
-    <link href="css/grayscale.css" rel="stylesheet">
-    <link href="css/custom.css" rel="stylesheet">
-
-  </head>
-
-  <body id="page-top">
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="img/logo.gif" width="50px"></a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fa fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
+  <div id="preload-overlay">
+      <div class="loader-frame">
+          <div class="loader1" id="loader1"></div>
+          <div class="loader2" id="loader2"></div>
       </div>
-    </nav>
+  </div>
+	
+	<nav id="mainNav" class="navbar navbar-expand-lg navbar-dark bg-dark navbar-fixed-top">
+  		<a class="navbar-brand" href="#">Stephen Wong</a>
+  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    		<span class="navbar-toggler-icon"></span>
+  		</button>
 
-    <!-- Intro Header -->
-    <header class="head">
-      <div class="overlay"></div>
-      <div class="head__row">
-        <div class="head__column">
-          <img src="img/heroPic.png" alt="Stephen Wong">
-        </div>
-        <div class="head__column">
+  		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    		<ul class="navbar-nav mr-auto">
+      		         
+    		</ul>
+        <ul class="navbar-nav mr">
+          <li class="nav-item">
+            <a id="hero-link" class="nav-link active" href="#hero">Home <span class="sr-only">(current)</span></a>
+          </li>
           
+          <li class="nav-item">
+            <a id="portfolio-link" class="nav-link" href="#portfolio">Portfolio </a>
+          </li>
+
+          <li class="nav-item">
+            <a id="about-link" class="nav-link" href="#about">About <span class="sr-only"></span></a>
+          </li>
+          <!-- <li class="nav-item">
+            <a id="contact-link" class="nav-link" href="#contact">Contact </a>
+          </li>           -->
+        </ul>
+  		</div>
+  </nav>
+
+  <section id="hero">
+    <div id="particles-js"></div>
+    <div class="row row__hero">
+      <div class="col-lg-12 hero-content">
+        <div class="hero_img_container"><img src="img/logo.png" /></div> 
+        <h1>Stephen Wong</h1>
+        <h2 id="hero-text-animation">Full Stack Web Developer</h2>
+        <button class="download"><a href="https://docs.google.com/document/d/1ipe5lAR92BvLnKM-lOR_02kn3LlAzB5_JjFA9yMRwW8/edit?usp=sharing" target="_blank">Download CV</a></button>
+      </div>
+    </div>
+  </section>
+  
+  <section id="portfolio">
+    <div class="container">
+      <div class="section-title">
+        <h1>My <span class="accent-text">Portfolio</span></h1>
+      </div>
+      
+      <div id="filter-btn" class="button-group">
+        <ul>
+          <!--Buttons for the image filter-->
+          <!--data-filter="What ever you want your image to be filter by"-->
+          <li><button class="button is-checked" data-filter="*">All</button></li>
+          <li><button class="button" data-filter=".react">React</button></li>
+          <li><button class="button" data-filter=".mongo">MongoDb</button></li>
+          <li><button class="button" data-filter=".javascript">Javascript</button></li>
+          <!--End of image filter buttonimg/ports-->
+        </ul>
+      </div>
+
+      <div class="img-grid">
+        <div class="img-container mongo" data-category="mongo">
+            <img src="img/port1.png">
+            <a href="https://enigmatic-anchorage-68613.herokuapp.com/" target="_blank">
+              <div class="img-overlay" href="https://enigmatic-anchorage-68613.herokuapp.com/">
+                <div class="img-overlay-text">
+                  <p>MongoDb</p>
+                  <h3>Mongo Scraper</h3>
+                </div>
+              </div>
+            </a>
+        </div>
+        
+        <div class="img-container react" data-category="react">
+            <img src="img/port2.png">
+            <a href="https://obscure-sands-40226.herokuapp.com/" target="_blank">
+              <div class="img-overlay" href="https://obscure-sands-40226.herokuapp.com/">
+                <div class="img-overlay-text">
+                  <p>React</p>
+                  <h3>CHOPPD</h3>
+                </div>
+              </div>
+            </a>
+        </div>
+        
+        <div class="img-container mongo" data-category="mongo">
+            <img src="img/port3.png">
+            <a href="https://swong87.github.io/trainScheduler/" target="_blank">
+              <div class="img-overlay" href="https://swong87.github.io/trainScheduler/">
+                <div class="img-overlay-text">
+                  <p>MongoDb</p>
+                  <h3>To Do App</h3>
+                </div>
+              </div>
+            </a>
+        </div>
+        
+        <div class="img-container javascript" data-category="javascript">
+            <img src="img/port4.png">
+            <a href="https://swong87.github.io/sushiHangMan/" target="_blank">
+              <div class="img-overlay" href="https://swong87.github.io/sushiHangMan/">
+                <div class="img-overlay-text">
+                  <p>Javascript</p>
+                  <h3>Sushi Hangman</h3>
+                </div>
+              </div>
+            </a>
+        </div>
+        
+        <div class="img-container javascript" data-category="javascript">
+            <img src="img/port5.png">
+            <a href="https://swong87.github.io/triviaGame/" target="_blank">
+              <div class="img-overlay" href="https://swong87.github.io/triviaGame/">
+                <div class="img-overlay-text">
+                  <p>Javascript</p>
+                  <h3>Warcraft Trivia</h3>
+                </div>
+              </div>
+            </a>
+        </div>
+        
+        <div class="img-container javascript" data-category="javascript">
+            <img src="img/port6.png">
+            <a href="https://swong87.github.io/plantsVsZombiesRPG/" target="_blank">
+              <div class="img-overlay" href="https://swong87.github.io/plantsVsZombiesRPG/">
+                <div class="img-overlay-text">
+                  <p>Javascript</p>
+                  <h3>Plants Vs Zombies RPG</h3>
+                </div>
+              </div>
+            </a>
         </div>
       </div>
-    </header>
+    </div>
+  </section>
 
-    <!-- About Section -->
-    <section id="about" class="content-section text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-4"></div>
-          <div class="col-sm-4"></div>
-          <div class="col-sm-4"></div>
+  <section id="about">
+    <div class="container">
+        <div class="row left-xs left-sm left-md left-lg">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <div class="about-text">
+                    <h2>Hi, I'm <span class="accent-text">Stephen</span></h2>
+                    <p>
+                      I am a Full Stack Web Developer with a passion for tech, a love for food, and a respect for art.  I've studied Digital Media and 3D Animation at UCF for 5 years.  During my time in school I made my living as a Sushi Chef, gaining some training from Iron Chef Masaharu Morimoto.  5 years after I graduated, I was given the opportunity to continue my learning by going back to UCF to study Full Stack Web Development.  I have 2 loves in my life; My girlfriend, Lucia, and my baby girl, Lila.  In our free time we love to travel and explore delicious foods.
+                    </p>
+                    <ul class="about-social">
+                        <!--Social icons for the about section-->
+                        <!--These icons are font-awesome icons and more can be looked up at https://fontawesome.com/icons?d=gallery-->
+                        <li><a href="http://www.google.com"><i class="fab fa-facebook-f"></i></a></li>
+                        <!--Simply replace the google link with your social media link-->
+                        <li><a href="http://www.google.com"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="http://www.google.com"><i class="far fa-envelope"></i></a></li>
+                        <li><a href="http://www.google.com"><i class="fab fa-google-plus-g"></i></a></li>
+                        <li><a href="http://www.google.com"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <div class="about-resume">
+                    <div class="skills">
+                        <h2>My Skills</h2>
+                        
+                        <div class="skill-progress-container">
+                            <p>Back-End Dev</p>
+                            <div class="skill-bar">
+                                <div class="bar-percent backEnd"><div class="inner-percent"></div></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-progress-container">
+                            <p>Front-End Dev</p>
+                            <div class="skill-bar">
+                                <div class="bar-percent frontEnd"><div class="inner-percent"></div></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-progress-container">
+                            <p>Databases</p>
+                            <div class="skill-bar">
+                                <div class="bar-percent databases"><div class="inner-percent"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="education">
+                        <h2>My Education</h2>
+                        <div class="eduction-block">
+                            <h4>University of Central Florida</h4>
+                            <p>BA in Digital Media</p>
+                        </div>
+                        <div class="eduction-block">
+                            <h4>University of Central Florida</h4>
+                            <p>Certification in Web Development</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="row">
-          <div class="col-sm-4"></div>
-          <div class="col-sm-4"></div>
-          <div class="col-sm-4"></div>
-        </div>
-      </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Download Section -->
-    <section id="portfolio" class="download-section content-section text-center">
-      <div class="container">
-        <div class="col-lg-8 mx-auto">
-          <h2>My Projects</h2>
-          <p></p>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 col-sm-6 portfolio-item">
-            <div>
-              <a href="https://enigmatic-anchorage-68613.herokuapp.com/" target="_blank"><img class="card-img-top" src="img/pro01.JPG" alt=""></a>
-              <div class="card-body">
-                <h4 class="card-title">
-                  <a href="https://enigmatic-anchorage-68613.herokuapp.com/" target="_blank">MongoScraper</a>
-                </h4>
-                <p class="card-text">An app that lets you save and add comments to your favorite articles scraped from BuzzFeed.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6 portfolio-item">
-            <div>
-              <a href="https://obscure-sands-40226.herokuapp.com/" target="_blank"><img class="card-img-top" src="img/pro07.JPG" alt=""></a>
-              <div class="card-body">
-                <h4 class="card-title">
-                  <a href="https://obscure-sands-40226.herokuapp.com/">Choppd</a>
-                </h4>
-                <p class="card-text">A competitive recipe sharing app that challenges users to create new and exciting recipes with common ingredients.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6 portfolio-item">
-            <div>
-              <a href="https://swong87.github.io/sushiHangMan/" target="_blank"><img class="card-img-top" src="img/pro03.JPG" alt=""></a>
-              <div class="card-body">
-                <h4 class="card-title">
-                  <a href="https://swong87.github.io/sushiHangMan/" target="_blank">Sushi Hangman</a>
-                </h4>
-                <p class="card-text">A fun game of hangman that has a sushi theme!</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6 portfolio-item">
-            <div>
-              <a href="https://swong87.github.io/triviaGame/" target="_blank"><img class="card-img-top" src="img/pro04.JPG" alt=""></a>
-              <div class="card-body">
-                <h4 class="card-title">
-                  <a href="https://swong87.github.io/triviaGame/" target="_blank">Warcraft Trivia Game</a>
-                </h4>
-                <p class="card-text">A timed trivia game that tests your knowledge of the World of Warcaft games.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6 portfolio-item">
-            <div>
-              <a href="https://swong87.github.io/trainScheduler/" target="_blank"><img class="card-img-top" src="img/pro05.JPG" alt=""></a>
-              <div class="card-body">
-                <h4 class="card-title">
-                  <a href="https://swong87.github.io/trainScheduler/" target="_blank">Train Scheduler</a>
-                </h4>
-                <p class="card-text">An app that calculates train arrival times from user added trains.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6 portfolio-item">
-            <div>
-              <a href="https://swong87.github.io/plantsVsZombiesRPG/" target="_blank"><img class="card-img-top" src="img/pro06.JPG" alt=""></a>
-              <div class="card-body">
-                <h4 class="card-title">
-                  <a href="https://swong87.github.io/plantsVsZombiesRPG/" target="_blank">Plants Vs Zombies RPG</a>
-                </h4>
-                <p class="card-text">A simple RPG based on the game "Plants Vs Zombies."</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+  <footer>
+    <p>Copyright &#169; 2018 Stephen Wong</p>
+  </footer>
 
-    <!-- Contact Section -->
-    <section id="contact" class="content-section text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2>Let's talk!</h2>
-            <p>Feel free to send me an email.</p>
-            <h4>Wong.Stephen87@gmail.com</h4>
-            <!-- <form action="email.php" method="POST">
-              <div class="form-group">
-                <label for="exampleFormControlInput1">Email address</label>
-                <input name="email" type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-              </div>
-              <div class="form-group">
-                <label for="exampleFormControlTextarea1">Message</label>
-                <textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
-            </form> -->
-            <br>
-            <ul class="list-inline banner-social-buttons">
-              <li class="list-inline-item">
-                <a href="https://twitter.com/StephenSWong" class="btn btn-default btn-lg">
-                  <i class="fa fa-twitter fa-fw"></i>
-                  <span class="network-name">Twitter</span>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="https://github.com/Swong87" class="btn btn-default btn-lg">
-                  <i class="fa fa-github fa-fw"></i>
-                  <span class="network-name">Github</span>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="https://www.linkedin.com/in/stephen-wong-11065833/" class="btn btn-default btn-lg">
-                  <i class="fa fa-linkedin fa-fw"></i>
-                  <span class="network-name">LinkedIn</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
+	<!--Allows me to use JQuery -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <!-- Allows me to use Bootstrap JS -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!-- Popper JS for Bootstrap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 
-    <!-- Map Section -->
-    <div id="map"></div>
+	<!-- Bootstrap's javascript for dropdown menu -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <!-- <script src="js/particles.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.2/ScrollMagic.min.js"></script>
+  <!-- <script src="js/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script> -->
+  <script src="js/grayscale.min.js"></script>
 
-    <!-- Footer -->
-    <footer>
-      <div class="container text-center">
-        <p>Copyright &copy; Stephen Wong 2017</p>
-      </div>
-    </footer>
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/popper/popper.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8nhmIr5I7cP1KWrFaL6JI-QXF9IUzTIo&sensor=false"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="js/grayscale.js"></script>
-
-  </body>
-
+</body>
 </html>
