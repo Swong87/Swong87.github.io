@@ -1,246 +1,767 @@
 <!DOCTYPE html>
 <html lang="en-us">
-<head>
-  <title>Stephen Wong | Full Stack Web Developer | Orlando, FL</title>
-  <meta charset="UTF-8">
-  <meta name="description" content="Learn more about Stephen Wong, Full Stack Web Developer from Orlando Florida. Contact Stephen for front-end or back-end services now."/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <title>Stephen Wong | Full Stack Web Developer | Orlando, FL</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Learn more about Stephen Wong, Full Stack Web Developer from Orlando Florida. Contact Stephen for front-end or back-end services now."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="css/custom.min.css" type="text/css" />
+    <!-- Modern Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-</head>
-<body>
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
 
-  <div id="preload-overlay">
-      <div class="loader-frame">
-          <div class="loader1" id="loader1"></div>
-          <div class="loader2" id="loader2"></div>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.min.css" type="text/css" />
+  </head>
+  <body data-theme="light">
+    <!-- Theme Toggle -->
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+      <i class="fas fa-moon" id="theme-icon"></i>
+    </button>
+
+    <!-- Navigation -->
+    <nav class="main-nav" id="mainNav">
+      <div class="nav-container">
+        <a href="#hero" class="nav-brand">Stephen Wong</a>
+
+        <div class="nav-menu" id="navMenu">
+          <a href="#hero" class="nav-link active">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#experience" class="nav-link">Experience</a>
+          <a href="#portfolio" class="nav-link">Portfolio</a>
+        </div>
+
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Toggle navigation"
+        >
+          <span class="hamburger"></span>
+          <span class="hamburger"></span>
+          <span class="hamburger"></span>
+        </button>
       </div>
-  </div>
-	
-	<nav id="mainNav" class="navbar navbar-expand-lg navbar-dark bg-dark navbar-fixed-top">
-  		<a class="navbar-brand" href="#">Stephen Wong</a>
-  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    		<span class="navbar-toggler-icon"></span>
-  		</button>
+    </nav>
 
-  		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-    		<ul class="navbar-nav mr-auto">
-      		         
-    		</ul>
-        <ul class="navbar-nav mr">
-          <li class="nav-item">
-            <a id="hero-link" class="nav-link active" href="#hero">Home <span class="sr-only">(current)</span></a>
-          </li>
-          
-          <li class="nav-item">
-            <a id="portfolio-link" class="nav-link" href="#portfolio">Portfolio </a>
-          </li>
-
-          <li class="nav-item">
-            <a id="about-link" class="nav-link" href="#about">About <span class="sr-only"></span></a>
-          </li>
-          <!-- <li class="nav-item">
-            <a id="contact-link" class="nav-link" href="#contact">Contact </a>
-          </li>           -->
-        </ul>
-  		</div>
-  </nav>
-
-  <section id="hero">
-    <div id="particles-js"></div>
-    <div class="row row__hero">
-      <div class="col-lg-12 hero-content">
-        <div class="hero_img_container"><img src="img/logo.png" /></div> 
-        <h1>Stephen Wong</h1>
-        <h2 id="hero-text-animation">Full Stack Web Developer</h2>
-        <button class="download"><a href="https://docs.google.com/document/d/1ipe5lAR92BvLnKM-lOR_02kn3LlAzB5_JjFA9yMRwW8/edit?usp=sharing" target="_blank">Download CV</a></button>
-      </div>
-    </div>
-  </section>
-  
-  <section id="portfolio">
-    <div class="container">
-      <div class="section-title">
-        <h1>My <span class="accent-text">Portfolio</span></h1>
-      </div>
-      
-      <div id="filter-btn" class="button-group">
-        <ul>
-          <!--Buttons for the image filter-->
-          <!--data-filter="What ever you want your image to be filter by"-->
-          <li><button class="button is-checked" data-filter="*">All</button></li>
-          <li><button class="button" data-filter=".react">React</button></li>
-          <li><button class="button" data-filter=".mongo">MongoDb</button></li>
-          <li><button class="button" data-filter=".javascript">Javascript</button></li>
-          <!--End of image filter buttonimg/ports-->
-        </ul>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+      <!-- Animated Background Blobs -->
+      <div class="animated-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+        <div class="blob blob-4"></div>
       </div>
 
-      <div class="img-grid">
-        <div class="img-container mongo" data-category="mongo">
-            <img src="img/port1.png">
-            <a href="https://enigmatic-anchorage-68613.herokuapp.com/" target="_blank">
-              <div class="img-overlay" href="https://enigmatic-anchorage-68613.herokuapp.com/">
-                <div class="img-overlay-text">
-                  <p>MongoDb</p>
-                  <h3>Mongo Scraper</h3>
-                </div>
-              </div>
-            </a>
-        </div>
-        
-        <div class="img-container react" data-category="react">
-            <img src="img/port2.png">
-            <a href="https://obscure-sands-40226.herokuapp.com/" target="_blank">
-              <div class="img-overlay" href="https://obscure-sands-40226.herokuapp.com/">
-                <div class="img-overlay-text">
-                  <p>React</p>
-                  <h3>CHOPPD</h3>
-                </div>
-              </div>
-            </a>
-        </div>
-        
-        <div class="img-container mongo" data-category="mongo">
-            <img src="img/port3.png">
-            <a href="https://swong87.github.io/trainScheduler/" target="_blank">
-              <div class="img-overlay" href="https://swong87.github.io/trainScheduler/">
-                <div class="img-overlay-text">
-                  <p>MongoDb</p>
-                  <h3>To Do App</h3>
-                </div>
-              </div>
-            </a>
-        </div>
-        
-        <div class="img-container javascript" data-category="javascript">
-            <img src="img/port4.png">
-            <a href="https://swong87.github.io/sushiHangMan/" target="_blank">
-              <div class="img-overlay" href="https://swong87.github.io/sushiHangMan/">
-                <div class="img-overlay-text">
-                  <p>Javascript</p>
-                  <h3>Sushi Hangman</h3>
-                </div>
-              </div>
-            </a>
-        </div>
-        
-        <div class="img-container javascript" data-category="javascript">
-            <img src="img/port5.png">
-            <a href="https://swong87.github.io/triviaGame/" target="_blank">
-              <div class="img-overlay" href="https://swong87.github.io/triviaGame/">
-                <div class="img-overlay-text">
-                  <p>Javascript</p>
-                  <h3>Warcraft Trivia</h3>
-                </div>
-              </div>
-            </a>
-        </div>
-        
-        <div class="img-container javascript" data-category="javascript">
-            <img src="img/port6.png">
-            <a href="https://swong87.github.io/plantsVsZombiesRPG/" target="_blank">
-              <div class="img-overlay" href="https://swong87.github.io/plantsVsZombiesRPG/">
-                <div class="img-overlay-text">
-                  <p>Javascript</p>
-                  <h3>Plants Vs Zombies RPG</h3>
-                </div>
-              </div>
-            </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="about">
-    <div class="container">
-        <div class="row left-xs left-sm left-md left-lg">
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                <div class="about-text">
-                    <h2>Hi, I'm <span class="accent-text">Stephen</span></h2>
-                    <p>
-                      I am a Full Stack Web Developer with a passion for tech, a love for food, and a respect for art.  I've studied Digital Media and 3D Animation at UCF for 5 years.  During my time in school I made my living as a Sushi Chef, gaining some training from Iron Chef Masaharu Morimoto.  5 years after I graduated, I was given the opportunity to continue my learning by going back to UCF to study Full Stack Web Development.  I have 2 loves in my life; My girlfriend, Lucia, and my baby girl, Lila.  In our free time we love to travel and explore delicious foods.
-                    </p>
-                    <ul class="about-social">
-                        <!--Social icons for the about section-->
-                        <li><a href="https://www.facebook.com/wong.stephen87" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="https://twitter.com/StephenSWong" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="mailto:wong.stephen87@gmail.com" target="_blank"><i class="far fa-envelope"></i></a></li>
-                        <li><a href="https://www.instagram.com/swongme/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                    </ul>
-                </div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-image">
+            <img src="img/profilePic2.jpg" alt="Stephen Wong" />
+          </div>
+          <div class="hero-text">
+            <h1 class="hero-title">
+              Hi, I'm <span class="highlight">Stephen Wong</span>
+            </h1>
+            <h2 class="hero-subtitle">Full Stack Web Developer</h2>
+            <p class="hero-description">
+              I craft beautiful, functional web experiences with modern
+              technologies. Passionate about clean code, innovative solutions,
+              and creating digital magic.
+            </p>
+            <div class="hero-actions">
+              <a href="#portfolio" class="btn btn-primary">View My Work</a>
+              <a
+                href="https://docs.google.com/document/d/1ipe5lAR92BvLnKM-lOR_02kn3LlAzB5_JjFA9yMRwW8/edit?usp=sharing"
+                target="_blank"
+                class="btn btn-secondary"
+                >Download CV</a
+              >
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                <div class="about-resume">
-                    <div class="skills">
-                        <h2>My Skills</h2>
-                        
-                        <div class="skill-progress-container">
-                            <p>Back-End Dev</p>
-                            <div class="skill-bar">
-                                <div class="bar-percent backEnd"><div class="inner-percent"></div></div>
-                            </div>
-                        </div>
-                        
-                        <div class="skill-progress-container">
-                            <p>Front-End Dev</p>
-                            <div class="skill-bar">
-                                <div class="bar-percent frontEnd"><div class="inner-percent"></div></div>
-                            </div>
-                        </div>
-                        
-                        <div class="skill-progress-container">
-                            <p>Databases</p>
-                            <div class="skill-bar">
-                                <div class="bar-percent databases"><div class="inner-percent"></div></div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="hero-social">
+              <a
+                href="https://www.linkedin.com/in/stephen-wong-dev"
+                target="_blank"
+                aria-label="LinkedIn"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a
+                href="https://github.com/Swong87"
+                target="_blank"
+                aria-label="GitHub"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="mailto:wong.stephen87@gmail.com" aria-label="Email">
+                <i class="fas fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Wave Separator -->
+      <div class="wave-separator">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">
+            Passionate developer with a unique journey
+          </p>
+        </div>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              I am a Full Stack Web Developer with a passion for technology, a
+              love for culinary arts, and a deep respect for creative
+              expression. My journey began with 5 years studying Digital Media
+              and 3D Animation at UCF, where I developed a keen eye for design
+              and user experience.
+            </p>
+            <p>
+              During my studies, I supported myself as a Sushi Chef, even
+              receiving training from Iron Chef Masaharu Morimoto. This
+              experience taught me precision, attention to detail, and the
+              importance of crafting something beautiful and functional -
+              principles I now apply to web development.
+            </p>
+            <p>
+              After graduation, I continued my learning journey by returning to
+              UCF for Full Stack Web Development certification. I love solving
+              complex problems, creating elegant solutions, and continuously
+              learning new technologies to build better web experiences.
+            </p>
+            <div class="about-skills">
+              <div class="skill-category">
+                <h4>Frontend</h4>
+                <div class="skills-list">
+                  <span class="skill">React</span>
+                  <span class="skill">JavaScript</span>
+                  <span class="skill">TypeScript</span>
+                  <span class="skill">CSS/SCSS</span>
+                  <span class="skill">HTML5</span>
+                </div>
+              </div>
+              <div class="skill-category">
+                <h4>Backend</h4>
+                <div class="skills-list">
+                  <span class="skill">Node.js</span>
+                  <span class="skill">Express</span>
+                  <span class="skill">MongoDB</span>
+                  <span class="skill">MySQL</span>
+                  <span class="skill">REST APIs</span>
+                </div>
+              </div>
+              <div class="skill-category">
+                <h4>Tools & More</h4>
+                <div class="skills-list">
+                  <span class="skill">Git</span>
+                  <span class="skill">Docker</span>
+                  <span class="skill">AWS</span>
+                  <span class="skill">Figma</span>
+                  <span class="skill">Photoshop</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Wave Separator -->
+      <div class="wave-separator">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M0,0L1200,0L1200,60C1100,40 1000,100 900,80C600,20 300,100 0,60Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+      <!-- Animated Background Blobs -->
+      <div class="animated-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-3"></div>
+      </div>
+
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Work Experience</h2>
+          <p class="section-subtitle">Professional journey and achievements</p>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">January 2025 - Present</div>
+              <h3>Senior Web Developer</h3>
+              <h4>Orlando Health</h4>
+              <p>
+                Leading development of new features and components for all of
+                Orlando Health's websites. Mentoring junior developers and
+                building out comprehensive website content for one of Florida's
+                largest healthcare systems.
+              </p>
+              <ul class="achievements">
+                <li>
+                  Develop scalable components for enterprise healthcare websites
+                </li>
+                <li>Mentor and guide junior developers on best practices</li>
+                <li>
+                  Build comprehensive website content and user experiences
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">October 2019 - 2025</div>
+              <h3>Digital Marketing Content Specialist</h3>
+              <h4>Orlando Health</h4>
+              <p>
+                Provided comprehensive web support for OrlandoHealth.com and
+                other owned websites using Sitecore and various CMS platforms.
+                Managed SEO optimization and lead generation through Salesforce
+                integration.
+              </p>
+              <ul class="achievements">
+                <li>
+                  Manage SEO for business locations, physicians, and facilities
+                  in GMB
+                </li>
+                <li>
+                  Maintain WordPress websites and handle domain/plugin ownership
+                  transfers
+                </li>
+                <li>
+                  Create form code and Salesforce connections for lead
+                  generation
+                </li>
+                <li>
+                  Support enterprise healthcare web properties using Sitecore
+                  CMS
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">March 2018 - October 2019</div>
+              <h3>Front-End Developer</h3>
+              <h4>Three21 Creative Agency</h4>
+              <p>
+                Developed diverse technology projects using WordPress,
+                ColdFusion, HTML, CSS, JavaScript, and React. Expanded skillset
+                to include mobile app development with Android Studio and email
+                marketing development.
+              </p>
+              <ul class="achievements">
+                <li>
+                  Develop responsive web applications using WordPress and React
+                </li>
+                <li>Build mobile applications in Android Studio</li>
+                <li>Create HTML email campaigns and marketing materials</li>
+                <li>
+                  Work with legacy systems including ColdFusion development
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">2013 - 2018</div>
+              <h3>Sushi Chef</h3>
+              <h4>Morimoto Asia, The Cowfish® Sushi Burger Bar</h4>
+              <p>
+                Trained in Iron Chef Masaharu Morimoto's restaurant, developing
+                precision, attention to detail, and ability to work under
+                pressure - skills that translate perfectly to software
+                development.
+              </p>
+              <ul class="achievements">
+                <li>
+                  Maintained quality standards in high-pressure environment
+                </li>
+                <li>Learned importance of precision and attention to detail</li>
+                <li>Developed strong work ethic and discipline</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Wave Separator -->
+      <div class="wave-separator">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+      <!-- Animated Background Blobs -->
+      <div class="animated-blobs">
+        <div class="blob blob-2"></div>
+        <div class="blob blob-4"></div>
+      </div>
+
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">
+            A showcase of my best work and technical expertise
+          </p>
+        </div>
+
+        <div class="portfolio-filters">
+          <button class="filter-btn active" data-filter="*">
+            All Projects
+          </button>
+          <button class="filter-btn" data-filter=".websites">Websites</button>
+          <button class="filter-btn" data-filter=".games">Games</button>
+        </div>
+
+        <div class="portfolio-grid">
+          <div class="portfolio-item websites" data-category="websites">
+            <div class="project-card">
+              <div class="project-image">
+                <img
+                  src="img/doctors-center.png"
+                  alt="Doctors' Center Hospital Website"
+                />
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <a
+                      href="https://www.doctorscenterhospital.com/"
+                      target="_blank"
+                      class="project-link"
+                    >
+                      <i class="fas fa-external-link-alt"></i>
+                    </a>
                     
-                    <div class="education">
-                        <h2>My Education</h2>
-                        <div class="eduction-block">
-                            <h4>University of Central Florida</h4>
-                            <p>BA in Digital Media</p>
-                        </div>
-                        <div class="eduction-block">
-                            <h4>University of Central Florida</h4>
-                            <p>Certification in Web Development</p>
-                        </div>
-                    </div>
+                  </div>
                 </div>
+              </div>
+              <div class="project-content">
+                <div class="project-tags">
+                  <span class="tag">Next.js</span>
+                  <span class="tag">React</span>
+                  <span class="tag">TypeScript</span>
+                  <span class="tag">Algolia</span>
+                  <span class="tag">Builder.io</span>
+                  <span class="tag">Vercel</span>
+                </div>
+                <h3 class="project-title">Doctors' Center Hospital</h3>
+                <p class="project-description">
+                  Enterprise healthcare website serving Puerto Rico's largest
+                  hospital system. Built 80% of components with Next.js,
+                  integrated Algolia search functionality, and implemented
+                  Builder.io CMS for content management. Deployed on Vercel with
+                  optimized performance.
+                </p>
+              </div>
             </div>
+          </div>
+
+          <div class="portfolio-item websites" data-category="websites">
+            <div class="project-card">
+              <div class="project-image">
+                <img
+                  src="img/greenmile.png"
+                  alt="GreenMile Fleet Management Platform"
+                />
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <a
+                      href="https://greenmile.com/"
+                      target="_blank"
+                      class="project-link"
+                    >
+                      <i class="fas fa-external-link-alt"></i>
+                    </a>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="project-content">
+                <div class="project-tags">
+                  <span class="tag">WordPress</span>
+                  <span class="tag">PHP</span>
+                  <span class="tag">Custom Theme</span>
+                  <span class="tag">ACF</span>
+                  <span class="tag">JavaScript</span>
+                </div>
+                <h3 class="project-title">GreenMile Fleet Management</h3>
+                <p class="project-description">
+                  Enterprise fleet management and route optimization platform
+                  for Descartes GreenMile. Built custom WordPress theme with
+                  Advanced Custom Fields integration, delivering a professional
+                  B2B solution for logistics and transportation companies.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-item games" data-category="games">
+            <div class="project-card">
+              <div class="project-image">
+                <img src="img/port4.png" alt="Sushi Hangman Game" />
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <a
+                      href="https://swong87.github.io/sushiHangMan/"
+                      target="_blank"
+                      class="project-link"
+                    >
+                      <i class="fas fa-external-link-alt"></i>
+                    </a>
+                    <a
+                      href="https://github.com/Swong87/sushiHangMan"
+                      class="project-link"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-content">
+                <div class="project-tags">
+                  <span class="tag">JavaScript</span>
+                  <span class="tag">HTML5</span>
+                  <span class="tag">CSS3</span>
+                </div>
+                <h3 class="project-title">Sushi Hangman</h3>
+                <p class="project-description">
+                  An interactive word guessing game with a sushi theme. Features
+                  dynamic animations, score tracking, and responsive design for
+                  all devices.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-item games" data-category="games">
+            <div class="project-card">
+              <div class="project-image">
+                <img src="img/port5.png" alt="Warcraft Trivia Game" />
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <a
+                      href="https://swong87.github.io/triviaGame/"
+                      target="_blank"
+                      class="project-link"
+                    >
+                      <i class="fas fa-external-link-alt"></i>
+                    </a>
+                    <a
+                      href="https://github.com/Swong87/triviaGame"
+                      class="project-link"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-content">
+                <div class="project-tags">
+                  <span class="tag">JavaScript</span>
+                  <span class="tag">jQuery</span>
+                  <span class="tag">Bootstrap</span>
+                </div>
+                <h3 class="project-title">Warcraft Trivia</h3>
+                <p class="project-description">
+                  A timed trivia game testing knowledge of World of Warcraft
+                  lore. Features multiple question types, scoring system, and
+                  engaging animations.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-item games" data-category="games">
+            <div class="project-card">
+              <div class="project-image">
+                <img src="img/port6.png" alt="Plants vs Zombies RPG" />
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <a
+                      href="https://swong87.github.io/plantsVsZombiesRPG/"
+                      target="_blank"
+                      class="project-link"
+                    >
+                      <i class="fas fa-external-link-alt"></i>
+                    </a>
+                    <a
+                      href="https://github.com/Swong87/plantsVsZombiesRPG"
+                      class="project-link"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-content">
+                <div class="project-tags">
+                  <span class="tag">JavaScript</span>
+                  <span class="tag">Game Dev</span>
+                  <span class="tag">jQuery</span>
+                </div>
+                <h3 class="project-title">Plants vs Zombies RPG</h3>
+                <p class="project-description">
+                  A browser-based RPG game inspired by Plants vs Zombies.
+                  Features turn-based combat, character progression, and custom
+                  game mechanics.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-  <footer>
-    <p>Copyright &#169; 2018 Stephen Wong</p>
-  </footer>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-text">
+            <p>
+              &copy; 2025 Stephen Wong. Crafted with passion and modern web
+              technologies.
+            </p>
+          </div>
+          <div class="footer-social">
+            <a
+              href="https://www.linkedin.com/in/stephen-wong-dev"
+              target="_blank"
+              aria-label="LinkedIn"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a
+              href="https://github.com/Swong87"
+              target="_blank"
+              aria-label="GitHub"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="mailto:wong.stephen87@gmail.com" aria-label="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/swongme/"
+              target="_blank"
+              aria-label="Instagram"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-	<!--Allows me to use JQuery -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <!-- Allows me to use Bootstrap JS -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <!-- Popper JS for Bootstrap -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <!-- JavaScript -->
+    <script>
+      // Theme Toggle Functionality
+      const themeToggle = document.getElementById("theme-toggle");
+      const themeIcon = document.getElementById("theme-icon");
+      const body = document.body;
 
-	<!-- Bootstrap's javascript for dropdown menu -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  <!-- <script src="js/particles.js"></script> -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.2/ScrollMagic.min.js"></script>
-  <!-- <script src="js/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script> -->
-  <script src="js/grayscale.min.js"></script>
+      // Check for saved theme preference or default to 'light'
+      const currentTheme = localStorage.getItem("theme") || "light";
+      body.setAttribute("data-theme", currentTheme);
 
-</body>
+      // Update icon based on current theme
+      updateThemeIcon(currentTheme);
+
+      themeToggle.addEventListener("click", () => {
+        const currentTheme = body.getAttribute("data-theme");
+        const newTheme = currentTheme === "light" ? "dark" : "light";
+
+        body.setAttribute("data-theme", newTheme);
+        localStorage.setItem("theme", newTheme);
+        updateThemeIcon(newTheme);
+      });
+
+      function updateThemeIcon(theme) {
+        themeIcon.className = theme === "light" ? "fas fa-moon" : "fas fa-sun";
+      }
+
+      // Mobile Navigation Toggle
+      const navToggle = document.getElementById("navToggle");
+      const navMenu = document.getElementById("navMenu");
+
+      navToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+        navToggle.classList.toggle("active");
+      });
+
+      // Close mobile menu when clicking on a link
+      document.querySelectorAll(".nav-link").forEach((link) => {
+        link.addEventListener("click", () => {
+          navMenu.classList.remove("active");
+          navToggle.classList.remove("active");
+        });
+      });
+
+      // Portfolio Filter Functionality
+      const filterButtons = document.querySelectorAll(".filter-btn");
+      const portfolioItems = document.querySelectorAll(".portfolio-item");
+
+      filterButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          const filter = button.getAttribute("data-filter");
+
+          // Update active button
+          filterButtons.forEach((btn) => btn.classList.remove("active"));
+          button.classList.add("active");
+
+          // Filter portfolio items with smooth transitions
+          portfolioItems.forEach((item, index) => {
+            const shouldShow =
+              filter === "*" || item.classList.contains(filter.slice(1));
+
+            if (shouldShow) {
+              // Show item with staggered animation
+              item.style.display = "block";
+              item.classList.remove("hidden");
+
+              // Add staggered delay for smoother appearance
+              setTimeout(() => {
+                item.style.animation = "fadeInUp 0.5s ease forwards";
+              }, index * 100);
+            } else {
+              // Hide item
+              item.classList.add("hidden");
+
+              // Hide from layout after transition
+              setTimeout(() => {
+                if (item.classList.contains("hidden")) {
+                  item.style.display = "none";
+                }
+              }, 200);
+            }
+          });
+        });
+      });
+
+      // Smooth Scrolling for Navigation Links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
+        });
+      });
+
+      // Update active navigation link on scroll
+      window.addEventListener("scroll", () => {
+        const sections = document.querySelectorAll("section");
+        const navLinks = document.querySelectorAll(".nav-link");
+
+        let current = "";
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.clientHeight;
+          if (scrollY >= sectionTop - 200) {
+            current = section.getAttribute("id");
+          }
+        });
+
+        navLinks.forEach((link) => {
+          link.classList.remove("active");
+          if (link.getAttribute("href") === `#${current}`) {
+            link.classList.add("active");
+          }
+        });
+      });
+
+      // Add scroll animations
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px",
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.style.animation = "fadeInUp 0.8s ease forwards";
+          }
+        });
+      }, observerOptions);
+
+      // Observe elements for animation
+      document
+        .querySelectorAll(".project-card, .timeline-item, .skill-category")
+        .forEach((el) => {
+          observer.observe(el);
+        });
+
+      // Debug: Log blob elements to console
+      console.log("Blobs found:", document.querySelectorAll(".blob").length);
+      document.querySelectorAll(".blob").forEach((blob, index) => {
+        console.log(
+          `Blob ${index + 1}:`,
+          blob,
+          "Animation:",
+          getComputedStyle(blob).animation
+        );
+      });
+    </script>
+  </body>
 </html>
