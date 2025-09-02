@@ -120,7 +120,7 @@ a {
   transition: var(--transition);
   
   &:hover {
-    color: var(--tertiary);
+    color: var(--secondary);
   }
 }
 
@@ -335,7 +335,7 @@ section {
   left: 0;
   right: 0;
   z-index: 1001; // Higher than theme toggle to prevent conflicts
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(241, 245, 249, 0.95);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border-color);
   transition: var(--transition);
@@ -470,7 +470,7 @@ section {
   position: relative;
   background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
   overflow: hidden;
-  padding-top: var(--nav-height);
+  padding-top: calc(var(--nav-height) + 20px);
   
   &::before {
     content: '';
@@ -693,7 +693,7 @@ section {
     background: var(--border-color);
     
     @media (max-width: 768px) {
-      left: 20px;
+      left: 25px;
     }
   }
 }
@@ -724,7 +724,7 @@ section {
   box-shadow: 0 0 0 4px var(--border-color);
   
   @media (max-width: 768px) {
-    left: -27px;
+    left: -5px;
   }
 }
 
