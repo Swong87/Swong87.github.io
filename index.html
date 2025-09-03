@@ -8,6 +8,47 @@
       content="Learn more about Stephen Wong, Full Stack Web Developer from Orlando Florida. Contact Stephen for front-end or back-end services now."
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO Meta Tags -->
+    <meta name="keywords" content="Stephen Wong, Full Stack Developer, Web Developer, Orlando, Florida, React, JavaScript, TypeScript, Node.js, Frontend, Backend, Portfolio" />
+    <meta name="author" content="Stephen Wong" />
+    <meta name="robots" content="index, follow" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="language" content="en-US" />
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Stephen Wong | Full Stack Web Developer | Orlando, FL" />
+    <meta property="og:description" content="Learn more about Stephen Wong, Full Stack Web Developer from Orlando Florida. Contact Stephen for front-end or back-end services now." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://swong87.github.io/" />
+    <meta property="og:image" content="https://swong87.github.io/img/profilePic2.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="Stephen Wong - Full Stack Developer" />
+    <meta property="og:locale" content="en_US" />
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Stephen Wong | Full Stack Web Developer | Orlando, FL" />
+    <meta name="twitter:description" content="Learn more about Stephen Wong, Full Stack Web Developer from Orlando Florida. Contact Stephen for front-end or back-end services now." />
+    <meta name="twitter:image" content="https://swong87.github.io/img/profilePic2.jpg" />
+    <meta name="twitter:creator" content="@swongme" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://swong87.github.io/" />
+    <link rel="alternate" hreflang="en" href="https://swong87.github.io/" />
+    <link rel="alternate" hreflang="x-default" href="https://swong87.github.io/" />
+    
+    <!-- Additional SEO -->
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+    <meta name="google-site-verification" content="your-google-verification-code" />
+    <meta name="msvalidate.01" content="your-bing-verification-code" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
 
     <!-- Preconnect for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -27,6 +68,67 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/custom.min.css" type="text/css" />
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="css/custom.min.css" as="style" />
+    <link rel="preload" href="img/profilePic2.jpg" as="image" />
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Stephen Wong",
+      "jobTitle": "Senior Web Developer",
+      "description": "Full Stack Web Developer specializing in React, JavaScript, TypeScript, and modern web technologies",
+      "url": "https://swong87.github.io/",
+      "image": "https://swong87.github.io/img/profilePic2.jpg",
+      "email": "wong.stephen87@gmail.com",
+      "telephone": "+1-407-xxx-xxxx",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Orlando",
+        "addressRegion": "FL",
+        "addressCountry": "US"
+      },
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Orlando Health",
+        "url": "https://www.orlandohealth.com"
+      },
+      "alumniOf": {
+        "@type": "Organization",
+        "name": "University of Central Florida",
+        "url": "https://www.ucf.edu"
+      },
+      "knowsAbout": [
+        "Full Stack Development",
+        "React",
+        "JavaScript",
+        "TypeScript", 
+        "Node.js",
+        "HTML5",
+        "CSS3",
+        "MongoDB",
+        "MySQL",
+        "REST APIs",
+        "Git",
+        "Docker",
+        "AWS",
+        "Figma",
+        "Adobe Photoshop"
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/in/stephen-wong-dev",
+        "https://github.com/Swong87",
+        "https://www.instagram.com/swongme/"
+      ],
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://swong87.github.io/"
+      }
+    }
+    </script>
   </head>
   <body data-theme="light">
     <!-- Theme Toggle -->
@@ -35,7 +137,7 @@
     </button>
 
     <!-- Navigation -->
-    <nav class="main-nav" id="mainNav">
+    <nav class="main-nav" id="mainNav" role="navigation" aria-label="Main navigation">
       <div class="nav-container">
         <a href="#hero" class="nav-brand">Stephen Wong</a>
 
@@ -59,7 +161,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="hero" class="hero">
+    <header id="hero" class="hero" role="banner">
       <!-- Animated Background Blobs -->
       <div class="animated-blobs">
         <div class="blob blob-1"></div>
@@ -71,7 +173,13 @@
       <div class="container">
         <div class="hero-content">
           <div class="hero-image">
-            <img src="img/profilePic2.jpg" alt="Stephen Wong" />
+            <img 
+              src="img/profilePic2.jpg" 
+              alt="Stephen Wong - Full Stack Web Developer headshot photo" 
+              width="300" 
+              height="300"
+              loading="eager"
+              decoding="async" />
           </div>
           <div class="hero-text">
             <h1 class="hero-title">
@@ -131,7 +239,8 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about">
+    <main>
+    <section id="about" class="about" role="main">
       <div class="container">
         <div class="section-header">
           <h2 class="section-title">About Me</h2>
@@ -173,7 +282,7 @@
                 </div>
               </div>
               <div class="skill-category">
-                <h4>Backend</h4>
+                <h3>Backend</h3>
                 <div class="skills-list">
                   <span class="skill">Node.js</span>
                   <span class="skill">Express</span>
@@ -183,7 +292,7 @@
                 </div>
               </div>
               <div class="skill-category">
-                <h4>Tools & More</h4>
+                <h3>Tools & More</h3>
                 <div class="skills-list">
                   <span class="skill">Git</span>
                   <span class="skill">Docker</span>
@@ -378,7 +487,11 @@
               <div class="project-image">
                 <img
                   src="img/doctors-center.png"
-                  alt="Doctors' Center Hospital Website"
+                  alt="Doctors' Center Hospital Website - Enterprise healthcare website for Puerto Rico's largest hospital system built with Next.js and React"
+                  width="600" 
+                  height="400"
+                  loading="lazy"
+                  decoding="async"
                 />
                 <div class="project-overlay">
                   <div class="project-links">
@@ -419,7 +532,11 @@
               <div class="project-image">
                 <img
                   src="img/greenmile.png"
-                  alt="GreenMile Fleet Management Platform"
+                  alt="GreenMile Fleet Management Platform - Enterprise fleet management and route optimization platform built with WordPress and PHP"
+                  width="600" 
+                  height="400"
+                  loading="lazy"
+                  decoding="async"
                 />
                 <div class="project-overlay">
                   <div class="project-links">
@@ -456,7 +573,13 @@
           <div class="portfolio-item games" data-category="games">
             <div class="project-card">
               <div class="project-image">
-                <img src="img/port4.png" alt="Sushi Hangman Game" />
+                <img 
+                  src="img/port4.png" 
+                  alt="Sushi Hangman Game - Interactive word guessing game with sushi theme built with JavaScript" 
+                  width="600" 
+                  height="400"
+                  loading="lazy"
+                  decoding="async" />
                 <div class="project-overlay">
                   <div class="project-links">
                     <a
@@ -494,7 +617,13 @@
           <div class="portfolio-item games" data-category="games">
             <div class="project-card">
               <div class="project-image">
-                <img src="img/port5.png" alt="Warcraft Trivia Game" />
+                <img 
+                  src="img/port5.png" 
+                  alt="Warcraft Trivia Game - Timed trivia game testing World of Warcraft lore knowledge built with JavaScript and jQuery" 
+                  width="600" 
+                  height="400"
+                  loading="lazy"
+                  decoding="async" />
                 <div class="project-overlay">
                   <div class="project-links">
                     <a
@@ -532,7 +661,13 @@
           <div class="portfolio-item games" data-category="games">
             <div class="project-card">
               <div class="project-image">
-                <img src="img/port6.png" alt="Plants vs Zombies RPG" />
+                <img 
+                  src="img/port6.png" 
+                  alt="Plants vs Zombies RPG - Browser-based RPG game with turn-based combat built with JavaScript and jQuery" 
+                  width="600" 
+                  height="400"
+                  loading="lazy"
+                  decoding="async" />
                 <div class="project-overlay">
                   <div class="project-links">
                     <a
@@ -569,6 +704,7 @@
         </div>
       </div>
     </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
