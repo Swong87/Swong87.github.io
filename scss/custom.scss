@@ -534,18 +534,19 @@ section {
     z-index: -1;
   }
 }
-
-.hero-title {
-  margin-bottom: var(--space-6);
-  
-  .highlight {
-    background: linear-gradient(135deg, var(--primary), var(--tertiary));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+.hero-text {
+  z-index: 5;
+  .hero-title {
+    margin-bottom: var(--space-6);
+    
+    .highlight {
+      background: linear-gradient(135deg, var(--primary), var(--tertiary));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
   }
 }
-
 .hero-subtitle {
   color: var(--text-secondary);
   font-weight: 400;
