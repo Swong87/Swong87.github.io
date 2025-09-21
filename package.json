@@ -32,13 +32,20 @@
     "jquery.easing": "^1.4.1",
     "popper.js": "^1.11.1"
   },
+  "scripts": {
+    "build": "npm run build:css && npm run build:js",
+    "build:css": "sass scss/custom.scss css/custom.css",
+    "build:css:min": "sass scss/custom.scss css/custom.min.css --style=compressed",
+    "build:js": "terser js/grayscale.js -o js/grayscale.min.js",
+    "watch": "npm run watch:css",
+    "watch:css": "sass --watch scss:css",
+    "serve": "browser-sync start --server --files '*.html, css/*.css, js/*.js' --startPath index.html",
+    "dev": "concurrently \"npm run watch:css\" \"npm run serve\""
+  },
   "devDependencies": {
-    "browser-sync": "2.18.13",
-    "gulp": "^3.9.1",
-    "gulp-clean-css": "3.7.0",
-    "gulp-header": "1.8.9",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.1.0",
-    "gulp-uglify": "3.0.0"
+    "browser-sync": "^2.29.3",
+    "concurrently": "^8.2.2",
+    "sass": "^1.77.0",
+    "terser": "^5.24.0"
   }
 }
