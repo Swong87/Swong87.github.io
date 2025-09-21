@@ -43,7 +43,7 @@
     "dev": "concurrently \"npm run watch:css\" \"npm run serve\""
   },
   "devDependencies": {
-    "browser-sync": "^2.29.3",
+    "browser-sync": "^3.0.4",
     "concurrently": "^8.2.2",
     "sass": "^1.77.0",
     "terser": "^5.24.0"
