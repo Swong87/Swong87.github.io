@@ -33,14 +33,13 @@
     "popper.js": "^1.11.1"
   },
   "scripts": {
-    "build": "npm run build:css && npm run build:js",
-    "build:css": "sass scss/custom.scss css/custom.css",
-    "build:css:min": "sass scss/custom.scss css/custom.min.css --style=compressed",
-    "build:js": "terser js/grayscale.js -o js/grayscale.min.js",
-    "watch": "npm run watch:css",
+    "dev": "node build.js --dev && concurrently \"npm run watch:css\" \"npm run serve\"",
+    "build": "node build.js --prod",
+    "build:dev": "node build.js --dev",
+    "build:prod": "node build.js --prod",
     "watch:css": "sass --watch scss:css",
     "serve": "browser-sync start --server --files '*.html, css/*.css, js/*.js' --startPath index.html",
-    "dev": "concurrently \"npm run watch:css\" \"npm run serve\""
+    "deploy": "npm run build:prod"
   },
   "devDependencies": {
     "browser-sync": "^2.29.3",
