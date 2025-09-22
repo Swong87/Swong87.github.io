@@ -439,6 +439,7 @@ section .container {
 
 .hero-image {
   position: relative;
+  z-index: 1;
 }
 .hero-image img {
   width: 100%;

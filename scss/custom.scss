@@ -501,7 +501,7 @@ section {
 
 .hero-image {
   position: relative;
-  
+  z-index: 1;
   img {
     width: 100%;
     max-width: 400px;
